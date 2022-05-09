@@ -6,16 +6,12 @@
 }
 
 .parent{
-    display:grid;
-    place-items:center;
-    width: auto; 
-    height: 560px;
-    background-image: url("./images/pattern-background-desktop.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: #e0e8ff url(../images/pattern-background-desktop.svg) no-repeat;
 }
 .container{
-    margin-top: 100px;
     border-radius: 16px;
     width: 21rem;
     height: 500px;
@@ -50,7 +46,7 @@ p, h2, button, a{
     padding: 24px 48px 0 48px;
 }
 .card-content{
-    height: 335px;
+    
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -68,8 +64,7 @@ p, h2, button, a{
     align-items: center;
     border-radius: 10px;
     width: 80%;
-    margin-left: 35px;
-    margin-top: -15px;
+    margin: auto;
 }
 .twoItems{
     display: flex;
@@ -119,7 +114,11 @@ p, h2, button, a{
     font-family: 'Red Hat Display', sans-serif;
     color: #fff;
     background-color:hsl(245, 75%, 52%);
-    box-shadow: rgba(110, 110, 255, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(110, 110, 255, 0.25) 0px 50px 100px 0, rgba(0, 0, 0, 0.3) 0px 30px 60px 0;
+}
+.pay:hover{
+    background-color: hsl(224, 37%, 56%);
+    transition: all 0.2s ease-in-out;
 }
 .cancel{
     border:none;
@@ -130,4 +129,8 @@ p, h2, button, a{
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
     color: #8e8e8e;
+}
+.cancel:hover {
+    color: black;
+    transition: all 0.2s ease-in-out;
 }
